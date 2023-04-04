@@ -24,9 +24,8 @@ public class Target : MonoBehaviour
         transform.position = new Vector3(Random.Range(-xRange,xRange),ySpawnPos);
         
     }
-}
 
-// Update is called once per frame
+    // Update is called once per frame
 void Update()
 {
 
@@ -39,10 +38,12 @@ Vector3 RandomForce()
 
 float RandomTorque()
 {
-    return Random.Range(-maxTorque,maxTorque)
+    return Random.Range(-maxTorque,maxTorque);
 }
 
 Vector3 RandomSpawnPos()
 {
-    return new Vector3(Random.Range (-xRange,xRange)ySpawnPos);
+    return new Vector3(Random.Range (-xRange,xRange),ySpawnPos);
+}
+
 }
