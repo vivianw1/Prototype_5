@@ -20,6 +20,7 @@ public class Target : MonoBehaviour
 
         targetRb.AddForce(RandomForce(), ForceMode.Impulse);
         targetRb.AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse);
+       
         transform.position = RandomSpawnPos();
         
     }
